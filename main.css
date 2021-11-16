@@ -47,6 +47,15 @@ input {
   direction: rtl;
 }
 
+input:hover {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
 .section-header {
   padding: 0;
   margin: 5px 0;
@@ -61,11 +70,13 @@ input {
   padding-top: 12px;
   display: flex;
   flex-wrap: wrap;
-  gap: 17px;
+  gap: 5px;
   justify-content: space-between;
 }
 
-.section-tip__buttons button {
+.section-tip__buttons button,
+.section-tip__buttons input {
+  padding: 0;
   width: 149px;
   height: 48px;
   background-color: hsl(183, 100%, 15%);
@@ -77,13 +88,30 @@ input {
   font-weight: 700;
 }
 
-.section-tip__buttons button:last-child {
+.section-tip__buttons input {
   background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  margin: 0;
+  text-align: center;
+}
+
+.section-tip__buttons input::placeholder {
   color: hsl(186, 14%, 43%);
+}
+
+.section-tip__buttons input:focus {
+  outline: none;
+  border: 2px solid hsl(172, 67%, 45%);
 }
 
 .section-tip__buttons button:active {
   background-color: hsl(172, 67%, 45%);
+}
+
+.section-tip__buttons button:hover {
+  background-color: hsl(171, 80%, 85%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
 }
 
 .section-people {
@@ -140,4 +168,9 @@ input {
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
+}
+
+.section-output button:hover {
+  cursor: pointer;
+  background-color: hsl(171, 80%, 85%);
 }
