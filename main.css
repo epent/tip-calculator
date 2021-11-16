@@ -70,7 +70,7 @@ input:focus {
   padding-top: 12px;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 17px;
   justify-content: space-between;
 }
 
