@@ -106,7 +106,7 @@ input:focus {
   border: 2px solid hsl(172, 67%, 45%);
 }
 
-.section-tip__buttons button:active {
+.section-tip__buttons button.active {
   background-color: hsl(172, 67%, 45%);
 }
 
