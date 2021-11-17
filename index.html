@@ -29,48 +29,54 @@
       <h1>TTER</h1>
     </header>
     <main>
-      <section class="section-bill">
-        <p class="section-header">Bill</p>
-        <div class="input-container">
-          <img src="/images/icon-dollar.svg" alt="" />
-          <input type="text" />
-        </div>
-      </section>
-      <section class="section-tip">
-        <p class="section-header">Select Tip %</p>
-        <div class="section-tip__buttons">
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-          <input type="text" placeholder="Custom" />
-        </div>
-      </section>
-      <section class="section-people">
-        <p class="section-header">Number of People</p>
-        <div class="input-container">
-          <img src="/images/icon-person.svg" alt="" />
-          <input type="text" />
-        </div>
-      </section>
-      <section class="section-output">
-        <div class="tip-amount">
-          <div>
-            <p class="section-output__header">Tip Amount</p>
-            <p class="per-person">/ person</p>
+      <div class="flex-first">
+        <section class="section-bill">
+          <p class="section-header">Bill</p>
+          <div class="input-container">
+            <img src="/images/icon-dollar.svg" alt="" />
+            <input type="text" />
           </div>
-          <p class="section-output__amount">$0.00</p>
-        </div>
-        <div class="total">
-          <div>
-            <p class="section-output__header">Total</p>
-            <p class="per-person">/ person</p>
+        </section>
+        <section class="section-tip">
+          <p class="section-header">Select Tip %</p>
+          <div class="section-tip__buttons">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input type="text" placeholder="Custom" />
           </div>
-          <p class="section-output__amount">$0.00</p>
-        </div>
-        <button>RESET</button>
-      </section>
+        </section>
+        <section class="section-people">
+          <p class="section-header">Number of People</p>
+          <div class="input-container">
+            <img src="/images/icon-person.svg" alt="" />
+            <input type="text" />
+          </div>
+        </section>
+      </div>
+      <div class="flex-second">
+        <section class="section-output">
+          <div>
+            <div class="tip-amount">
+              <div>
+                <p class="section-output__header">Tip Amount</p>
+                <p class="per-person">/ person</p>
+              </div>
+              <p class="section-output__amount">$0.00</p>
+            </div>
+            <div class="total">
+              <div>
+                <p class="section-output__header">Total</p>
+                <p class="per-person">/ person</p>
+              </div>
+              <p class="section-output__amount">$0.00</p>
+            </div>
+          </div>
+          <button>RESET</button>
+        </section>
+      </div>
     </main>
     <footer class="attribution">
       Challenge by

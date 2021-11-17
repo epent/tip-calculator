@@ -118,6 +118,7 @@ input:focus {
 
 .section-tip__buttons button.active {
   background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 
 .section-tip__buttons button:hover {
@@ -185,4 +186,32 @@ input:focus {
 .section-output button:hover {
   cursor: pointer;
   background-color: hsl(171, 80%, 85%);
+}
+
+@media (min-width: 1440px) {
+  main {
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    gap: 30px;
+  }
+
+  .section-output {
+    width: 330px;
+    height: 330px;
+    margin: 0;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .section-output__amount {
+    font-size: 50px;
+  }
+
+  .section-output button {
+    font-size: 20px;
+  }
 }
