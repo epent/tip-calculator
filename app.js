@@ -2,6 +2,7 @@
 
 const enteredBillAmount = document.querySelector(".section-bill input");
 const tipButtons = document.querySelectorAll(".section-tip__buttons button");
+const tipInput = document.querySelector(".section-tip__buttons input");
 let tipPercent = 0;
 const numberOfPeople = document.querySelector(".section-people input");
 const tipAmount = document.querySelectorAll(".section-output__amount")[0];
@@ -33,6 +34,10 @@ function activateButton(button) {
   }
 }
 
+function addCustomTip() {
+  tipPercent = tipInput.value;
+}
+
 function splitBill() {
   // count and output tip
   const tip =
@@ -50,17 +55,18 @@ function splitBill() {
 }
 
 function resetBill() {
-  console.log("clicked");
   enteredBillAmount.value = "";
   numberOfPeople.value = "";
   tipAmount.textContent = "$0.00";
   totalAmount.textContent = "$0.00";
+  tipInput.value = "";
 
   tipButtons.forEach((btn) => {
     btn.classList.remove("active");
   });
 }
 
+tipInput.addEventListener("change", addCustomTip);
 numberOfPeople.addEventListener("change", splitBill);
 resetButton.addEventListener("click", resetBill);
 
