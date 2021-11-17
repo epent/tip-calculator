@@ -63,6 +63,20 @@ input:focus {
   color: hsl(183, 100%, 15%);
 }
 
+.input-container {
+  position: relative;
+}
+
+.input-container > img {
+  position: absolute;
+  top: 20px;
+  left: 18px;
+}
+
+.input-container > input {
+  /* padding-left: 40px; */
+}
+
 .section-tip {
   margin-top: 30px;
 }
