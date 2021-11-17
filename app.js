@@ -60,6 +60,7 @@ function resetBill() {
   tipAmount.textContent = "$0.00";
   totalAmount.textContent = "$0.00";
   tipInput.value = "";
+  tipPercent = 0;
 
   tipButtons.forEach((btn) => {
     btn.classList.remove("active");
