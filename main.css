@@ -194,12 +194,21 @@ input:focus {
     margin: 0 auto;
     width: 60%;
     display: flex;
-    gap: 30px;
+    gap: 45px;
+  }
+
+  .flex-first {
+    padding: 10px;
+  }
+
+  .section-tip__buttons button,
+  .section-tip__buttons input {
+    width: 120px;
   }
 
   .section-output {
-    width: 330px;
-    height: 330px;
+    width: 315px;
+    height: 315px;
     margin: 0;
     padding: 45px;
     display: flex;
