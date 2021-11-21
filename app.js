@@ -77,6 +77,7 @@ function resetBill() {
 }
 
 tipInput.addEventListener("change", addCustomTip);
+tipInput.addEventListener("change", splitBill);
 peopleInput.addEventListener("change", splitBill);
 enteredBillAmount.addEventListener("change", splitBill);
 resetButton.addEventListener("click", resetBill);
