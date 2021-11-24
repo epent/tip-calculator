@@ -43,6 +43,9 @@ function addCustomTip() {
 }
 
 function splitBill() {
+  // remove class 'disabled'
+  resetButton.removeAttribute("class", "disabled");
+
   // check Number Of People input
   let numberOfPeople;
   peopleInput.value
@@ -74,6 +77,8 @@ function resetBill() {
   tipButtons.forEach((btn) => {
     btn.classList.remove("active");
   });
+
+  resetButton.setAttribute("class", "disabled");
 }
 
 tipInput.addEventListener("change", addCustomTip);

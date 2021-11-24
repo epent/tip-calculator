@@ -188,6 +188,12 @@ input:focus {
   background-color: hsl(171, 80%, 85%);
 }
 
+.section-output button.disabled {
+  cursor: not-allowed;
+  background-color: hsl(186, 14%, 43%);
+  color: hsla(183, 100%, 15%, 0.466);
+}
+
 footer {
   margin-top: 40px;
   margin-bottom: 5px;
