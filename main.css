@@ -188,6 +188,11 @@ input:focus {
   background-color: hsl(171, 80%, 85%);
 }
 
+footer {
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
 @media (max-width: 340px) {
   .section-tip__buttons {
     justify-content: center;
@@ -213,6 +218,10 @@ input:focus {
     width: 80%;
     display: flex;
     gap: 30px;
+  }
+
+  header {
+    padding: 11vh;
   }
 
   .flex-first {
